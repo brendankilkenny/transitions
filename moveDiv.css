@@ -1,20 +1,29 @@
 .moveDiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
     background-color:blue;
     border-radius:10px;
     height:100px;
     width:100px;
-    animation: rotation 3s infinite linear;
-    transition: 15s;
+    animation: animate 3s infinite linear;
+    /*transition: 3s;*/
 }
 
+@keyframes animate{
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(359deg);
+        background-color:black;
+    }
+}
+
+
 .moveDiv:hover{
+    transition: 3s;
     background-color:red;
     transform: translate(150px, 50px) scale(1.3);
 }
 
-@keyframes rotation{
-    0% {transform: rotate(0deg)}
-    100% {transform: rotate(359deg);
-}
 
 
