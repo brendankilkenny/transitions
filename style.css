@@ -1,0 +1,16 @@
+.box{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+    width:100px;
+    height:100px;
+    background-color:red;
+    transform:scale(1.1);
+    transition-property:transform;
+    transition-duration:500ms;
+}
+
+.box:hover{
+        transform:scale(2.1);
+}
