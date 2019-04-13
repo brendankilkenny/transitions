@@ -1,16 +1,35 @@
 .box{
 display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    
     width:100px;
     height:100px;
-    background-color:red;
-    transform:scale(1.1);
-    transition-property:transform;
-    transition-duration:500ms;
 }
 
-.box:hover{
-        transform:scale(2.1);
+ 
+
+.rotate {
+  position: absolute;
+  animation: rotation 5s infinite linear;
+}
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    background-color: red;
+    left: 1%;
+  }
+    50% {
+    background-color: orange;
+    left: 100%;
+  }
+  100% {
+    transform: rotate(359deg);
+        background-color: black;
+            left: 1%;
+
+  }
 }
