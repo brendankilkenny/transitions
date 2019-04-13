@@ -8,7 +8,6 @@
     height:100px;
     width:100px;
     animation: animate 3s infinite linear;
-    /*transition: 3s;*/
 }
 
 @keyframes animate{
